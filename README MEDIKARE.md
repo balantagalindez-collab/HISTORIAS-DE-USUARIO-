@@ -80,34 +80,3 @@ Requerimientos levantados por el equipo y registrados como *Issues* en GitHub (n
 | RD-01 | Constantes `PLAN_BASICO` y `PLAN_PREMIUM` |
 | RD-02 | Lista `clientes`, que conserva a todos los clientes de la sesión |
 
-### 2.5 Supuestos
-
-- "Otros usuarios" es el número de personas cubiertas por el plan (mínimo 1).
-- El descuento se calcula sobre el valor mensual ya calculado.
-- Los síntomas se ingresan uno por uno; "medicamento" cierra la factura y la opción 1 siguiente abre un cliente nuevo.
-
-## 3. Cómo ejecutar
-
-```bash
-javac MediKare.java
-java MediKare
-```
-
-Ejemplo de uso: opción 1 (registrar datos y síntomas; cerrar con "medicamento") → 2 (PB) → 3 (2 personas) → 4 (valor) → 6 (descuento) → 7 (visualizar) → 5 (respaldo). Para atender otro cliente se vuelve a elegir la opción 1, que abre un registro nuevo.
-
-## 4. Guion para el video explicativo (3 a 4 minutos)
-
-1. **Presentación (20 s):** nombre del equipo, caso B y MediKare.
-2. **Identidad (30 s):** mostrar logo, misión y visión.
-3. **Requerimientos y backlog (40 s):** mostrar el repositorio de GitHub, README y BACKLOG.
-4. **Código (60 s):** recorrer las constantes, la clase `Cliente`, el menú con `switch` y el ciclo `do-while`.
-5. **Demostración (60 s):** registrar un cliente con gripa, elegir PB, 2 personas, calcular, aplicar descuento, visualizar, generar el TXT y cerrar con "medicamento".
-6. **Cierre (10 s):** conclusiones y agradecimientos.
-
-## 5. Entregables
-
-- [x] Requerimientos (este README y los Issues de GitHub)
-- [x] Backlog e historias de usuario (`BACKLOG.md`)
-- [x] Código comentado (`MediKare.java`)
-- [x] Nombre, logo, misión y visión
-- [ ] Video explicativo (grabar siguiendo el guion)
